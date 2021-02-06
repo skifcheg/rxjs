@@ -1,0 +1,10 @@
+<form class="form">
+  <div class="form__item" *ngFor="let input of inputsArray">
+    <label class="form__label">{{input.label}}</label>
+    <input class="form__input" [required]="input.required" [id]="input.id" [type]="input.type" [name]="input.name"
+      [pattern]="input.pattern">
+    <span class="error hide">{{ input.errorText }}</span>
+  </div>
+
+  <button class="btn form__btn" [disabled]="disabled" type="button" id="register">Register</button>
+</form>

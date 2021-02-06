@@ -1,0 +1,40 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  margin: 10VH 10VW;
+  &__label{
+    margin-bottom: 5px;
+  }
+  &__input{
+    border-radius: 3px;
+    &:invalid{
+      background-color: #f5e2e2;
+    }
+  }
+  &__item{
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+  }
+}
+.error{
+  color: #f36666;
+}
+.hide{
+  display: none;
+}
+
+
+.btn{
+  height: 30px;
+  border-radius: 5px;
+  padding: 4px 10px;
+  line-height: 1;
+}
+
+[disabled]{
+  opacity: 0.5;
+  pointer-events: none;
+}
