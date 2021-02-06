@@ -15,7 +15,7 @@ export class FormComponent implements AfterViewInit {
   inputsArray = [{
     label: 'E-mail',
     type: 'email',
-    name: '1email',
+    name: 'email',
     id: 'input-mail',
     pattern: '.{4,}',
     required: true,
@@ -24,7 +24,7 @@ export class FormComponent implements AfterViewInit {
   {
     label: 'Password',
     type: 'password',
-    name: '2pass',
+    name: 'pass',
     id: 'input-pass',
     pattern: '.{4,}',
     required: true,
@@ -33,7 +33,7 @@ export class FormComponent implements AfterViewInit {
   {
     label: 'Repeat Password',
     type: 'password',
-    name: '3repeat-pass',
+    name: 'repeat-pass',
     id: 'input-pass-repeat',
     pattern: '.{4,}',
     required: false,
